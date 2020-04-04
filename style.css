@@ -4,7 +4,7 @@ body {
 
 #cont-maint {
     background-color: #f39c12;
-    width: 80%;
+    min-width: 80%;
     margin: auto;
     margin-top: 50vh;
     transform: translateY(-50%);
