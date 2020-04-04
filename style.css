@@ -4,10 +4,15 @@ body {
 
 #cont-maint {
     background-color: #f39c12;
-    width: 85%;
     margin: auto;
     margin-top: 50vh;
     transform: translateY(-50%);
+}
+
+@media (min-width: 1000px) {
+    #cont-maint {
+        width: 80%;
+    }
 }
 
 h1 {
