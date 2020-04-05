@@ -16,7 +16,8 @@ header {
 
 ul {
     list-style-type: none;
-    margin: 0 0 0 40vw;
+    width: 20vw;
+    margin:auto;
     padding: 0;
     overflow: hidden;
 }
@@ -40,12 +41,14 @@ li a:hover {
 
 
 .img-defil {
-    width: 4vw;
+    width: 10vh;
     display: block;
     margin: auto;
 
     position: fixed;
-    top: 90vh;
+    top: 88vh;
+    left: 50vw;
+    transform: translateX(-50%);
 }
 
 .cont-main {
@@ -54,7 +57,7 @@ li a:hover {
 
 #titre {
     margin: auto;
-    padding-top: 18vh;
+    padding-top: 16vh;
 }
 
 #nom {
