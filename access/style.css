@@ -3,6 +3,8 @@ html, body{
     padding: 0;
     height: 100%;}
 
+
+
 body {
     background-color: #34495e;
 }
@@ -53,7 +55,7 @@ li a:hover {
 }
 
 .cont-main {
-    height: 99vh;
+    height: 100vh;
 }
 
 #titre {
