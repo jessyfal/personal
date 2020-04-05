@@ -78,7 +78,7 @@ li a:hover {
 
 @media (max-width: 1000px) {
     #nom {
-        font-size: 10vh;
+        font-size: 18vw;
     }
 
     #contexte {
@@ -86,7 +86,7 @@ li a:hover {
     }
 
     .img-defil {
-        top: 83vh;
+        top: 84vh;
     }
 }
 
