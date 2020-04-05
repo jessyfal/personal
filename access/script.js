@@ -1,10 +1,12 @@
 function up(scrollPos){
-    let number  = ( Math.floor(scrollPos/window.innerHeight) + 2 ) * -1 + 1 - 1;
+    let number  = ( Math.floor((scrollPos-200 )/window.innerHeight) + 2 ) * -1 + 1 - 1;
+    if (number == -1){
+        number = 0;
+    }
     let page = "#" + ancres[number];
-
+    console.log(page)
+    console.log(number)
     window.location.href = page;
-
-    return false;
 }
 
 function down(scrollPos){
@@ -15,25 +17,38 @@ function down(scrollPos){
     let page = "#" + ancres[number];
     
     window.location.href = page;
+
     
-    return false;
 }
 
-var venue = true
-// Initial state
+
+var points = 0;
 var scrollPos = 0;
 var ancres = ["profil", "enseignement", "experience", "competences", "langues", "interets"]
-// adding scroll event
+
+
 window.addEventListener('scroll', function(){
-  // detects new state and compares it with the new one
-  if (venue){
-    if ((document.body.getBoundingClientRect()).top > scrollPos)
-		venue = up(scrollPos);
-    else
-        venue = down(scrollPos);
-  }
-  else{
-      venue = true
-  }
+    console.log(points)
+    if ((document.body.getBoundingClientRect()).top > scrollPos){
+        if (points == 20){
+            
+            points++;
+            up(scrollPos);
+            points = -30
+        }
+        else {
+            points++
+        }
+    }
+    else{
+        if (points == 20){
+            points++;
+            down(scrollPos);
+            points = -30
+        }
+        else{
+            points++
+        }
+    }
   scrollPos = (document.body.getBoundingClientRect()).top;
 });
