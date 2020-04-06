@@ -206,6 +206,7 @@ box-shadow: -47px 43px 26px -10px rgba(44,62,80,0.8);
     font-size: 3vh;
     grid-column: 1/2;
     margin: 1vh 0 0 0;
+    margin: auto;
 }
 
 .description {
@@ -222,6 +223,16 @@ box-shadow: -47px 43px 26px -10px rgba(44,62,80,0.8);
     display: none;
 }
 
+footer > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: inherit;
+}
+
+footer > ul > li {
+    width: 33vw;
+}
 
 
 @media (max-width: 1000px) {
@@ -307,8 +318,7 @@ box-shadow: -47px 43px 26px -10px rgba(44,62,80,0.8);
         background-color: #3498db;
         border-radius: 25px;
 
-        position: relative;
-        left: 17.5vw;
+        grid-column: 1/4;
     }
     
     .img-plus, .img-croix {
