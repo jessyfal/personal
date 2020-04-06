@@ -155,6 +155,17 @@ h2 {
 box-shadow: -47px 43px 26px -10px rgba(44,62,80,0.8);
 }
 
+.tuiles-competences {
+    width: 25vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+
+.tuiles-competences > .intitulé {
+    grid-column: 1/3;
+}
+
+
 .tuiles-langues {
     height: 18vh !important;
     width: 35vw;
@@ -180,9 +191,21 @@ box-shadow: -47px 43px 26px -10px rgba(44,62,80,0.8);
     grid-column: 2/4;
 }
 
-.dates, .lieu {
+.dates, .lieu{
     grid-row: 2;
     font-size: 3vh;
+}
+
+.note {
+    width: 3vw;
+    grid-column: 2/3;
+    margin: auto;
+}
+
+.comp {
+    font-size: 3vh;
+    grid-column: 1/2;
+    margin: 1vh 0 0 0;
 }
 
 .description {
@@ -190,6 +213,8 @@ box-shadow: -47px 43px 26px -10px rgba(44,62,80,0.8);
     grid-row: 3;
     font-size: 2.5vh;
     color: #34495e;
+
+    margin-top: 0px;
 
 }
 @media (max-width: 1000px) {
@@ -236,10 +261,21 @@ box-shadow: -47px 43px 26px -10px rgba(44,62,80,0.8);
         font-size: 4.5vw;
     
     }
+    .note {
+        width: 15vw;
+    }
+    .comp {
+        font-size: 5vw;
+    }
+
+    .tuiles-competences:nth-child(1){
+        height: 30vh;
+    }
+    .tuiles-competences:nth-child(2){
+        height: 20vh;
+    }
+    .tuiles-competences:nth-child(3){
+        height: 15vh;
+    }
 
 }
-
-
-
-
-
