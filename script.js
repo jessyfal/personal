@@ -21,9 +21,9 @@ function down(scrollPos) {
 function progressCursor(scrollPos){
     var max = window.scrollMaxY;
 
-    var pourcentage = scrollPos * -1 / max * 100 + "vh"
-    print(pourcentage)
-    document.documentElement.style.setProperty('--h', pourcentage)
+    var pourcentage = scrollPos * -1 / max * 100 + "vw"
+    console.log(pourcentage)
+    document.documentElement.style.setProperty('--cursor-h', pourcentage)
 
 }
 
