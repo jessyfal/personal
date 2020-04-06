@@ -14,19 +14,6 @@ html {
 
 }
 
-::-webkit-scrollbar {
-    width: 0.1vw;
-    background-color: #34495e;
-}
-
-::-webkit-scrollbar-track-piece {
-    background-color:  #2980b9;
-}
-
-::-webkit-scrollbar-button {
-    display: none;
-}
-
 body {
     background-color: #34495e;
 }

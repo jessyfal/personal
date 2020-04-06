@@ -19,11 +19,15 @@ function down(scrollPos) {
 }
 
 function progressCursor(scrollPos){
-    var max = window.scrollMaxY;
 
-    var pourcentage = scrollPos * -1 / max * 100 + "vw"
-    console.log(pourcentage)
-    document.documentElement.style.setProperty('--cursor-h', pourcentage)
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100 + "vw";
+    //var max = window.scrollMaxY;
+
+    //var pourcentage = scrollPos * -1 / max * 100 + "vw"
+    //console.log(pourcentage)
+    document.documentElement.style.setProperty('--cursor-h', scrolled)
 
 }
 
