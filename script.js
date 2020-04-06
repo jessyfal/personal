@@ -27,6 +27,23 @@ function progressCursor(scrollPos){
 
 }
 
+function openCroix(idOpen) {
+
+    document.getElementById(idOpen).style.display = "grid"
+    document.getElementById("cont-ex1").style.display = "none"
+    document.getElementById("progress-bar").style.display = "none"
+
+
+}
+
+function closeCroix(idClose) {
+
+    document.getElementById(idClose).style.display = "none"
+    document.getElementById("cont-ex1").style.display = "initial"
+    document.getElementById("progress-bar").style.display = "initial"
+
+}
+
 var points = 0;
 var scrollPos = 0;
 var ancres = ["profil", "enseignement", "experience", "competences", "langues", "interets"]
