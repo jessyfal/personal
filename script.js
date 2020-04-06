@@ -1,17 +1,17 @@
-function up(scrollPos){
-    let number  = ( Math.floor((scrollPos-200 )/window.innerHeight) + 2 ) * -1 + 1 - 1;
+function up(scrollPos) {
+    var number  = ( Math.floor((scrollPos-200 )/window.innerHeight) + 2 ) * -1 + 1 - 1;
     if (number == -1)
         number = 0;
 
-    let page = "#" + ancres[number];
+    var page = "#" + ancres[number];
     window.location.href = page;
 }
 
-function down(scrollPos){
-    let number  = Math.floor(scrollPos/window.innerHeight) * -1 + 1 - 1;
+function down(scrollPos) {
+    var number  = Math.floor(scrollPos/window.innerHeight) * -1 + 1 - 1;
     if (number == 0)
         number++;
-    let page = "#" + ancres[number];
+    var page = "#" + ancres[number];
     
     window.location.href = page;
 
