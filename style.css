@@ -91,6 +91,53 @@ li a:hover {
     height: 100vh;
 }
 
+
+#social {
+    display: flex;
+    position: absolute;
+    top: 14.5vh;
+    align-items: center;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.a-social {
+    width: 24vw;
+    height: 4.5vh;
+
+}
+
+#social-github {
+    background: url("images/github-nude.png") no-repeat center/4.5vh;
+}
+#social-github:hover {
+    background-image: url("images/github-plain.png");
+    transition: 0.2;
+}
+#social-mail {
+    background: url("images/mail-nude.png") no-repeat center/4.5vh;
+}
+#social-mail:hover {
+    background-image: url("images/mail-plain.png");
+    transition: 0.2;
+}
+#social-linkedin {
+    background: url("images/linkedin-nude.png") no-repeat center/4.5vh;
+}
+#social-linkedin:hover {
+    background-image: url("images/linkedin-plain.png");
+    transition: 0.2;
+}
+#social-cv {
+    background: url("images/cv-nude.png") no-repeat center/4.5vh;
+}
+#social-cv:hover {
+    background-image: url("images/cv-plain.png");
+    transition: 0.2;
+}
+
+
 #titre {
     margin: auto;
     padding-top: 16vh;
