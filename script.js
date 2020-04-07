@@ -46,7 +46,7 @@ function closeCroix(idClose) {
 
 var points = 0;
 var scrollPos = 0;
-var ancres = ["profil", "enseignement", "experience", "competences", "langues", "interets"]
+var ancres = ["profil", "enseignement", "experience", "competences", "langues"]
 
 
 window.addEventListener('scroll', function(){

@@ -12,6 +12,8 @@ html {
     scrollbar-color: #2980b9 #2c3e50;
     scrollbar-width: thin;
 
+   font-family: sans-serif;
+
 }
 
 body {
@@ -278,7 +280,7 @@ footer > ul {
 }
 
 footer > ul > li {
-    width: 33vw;
+    width: 49vw;
 }
 
 
