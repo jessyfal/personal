@@ -14,4 +14,3 @@ jobs:
         ftp-server: ftp://ftp.jessyfallavier.fr
         ftp-username: jessy1336777
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: /projets/animaux/ 
