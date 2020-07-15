@@ -283,8 +283,16 @@ footer > ul > li {
     width: 49vw;
 }
 
+.img-plus, .img-croix {
+    display: none;
+}
 
 @media (max-width: 1000px) {
+
+    .img-plus, .img-croix {
+        display: initial;
+    }
+
     #nom {
         font-size: 18vw;
     }
